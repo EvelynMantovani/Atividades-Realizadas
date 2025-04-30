@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atividade 25/04</title>
+</head>
+<body style="text-align: center;">
+
+  <p><span id="soma" style="color: black;">0</span></p>
+  <button onclick="Somatoria()">Mais um</button>
+  <button onclick="Diminua()">Menos um</button>
+  <button onclick="Resetar()">Volta a ter nada nada nada nadaaa</button>
+
+  <script>
+    let soma = 0;
+
+    function atualizarCor() {
+      const elemento = document.getElementById("soma");
+      if (soma > 0) {
+        elemento.style.color = "green";
+      } else if (soma < 0) {
+        elemento.style.color = "red";
+      } else {
+        elemento.style.color = "black";
+      }
+    }
+
+    function Somatoria() {
+      soma++;
+      document.getElementById("soma").textContent = soma;
+      atualizarCor();
+    }
+
+    function Diminua() {
+      soma--;
+      document.getElementById("soma").textContent = soma;
+      atualizarCor();
+    }
+
+    function Resetar() {
+      soma = 0;
+      document.getElementById("soma").textContent = soma;
+      atualizarCor();
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atividade 25/04</title>
+</head>
+<body style="text-align: center;">
+    <p><span id="soma">0</span></p>
+    <button onclick="Somatoria()">Mais um</button>
+
+    <script>
+        let soma = 0;
+
+        function Somatoria() {
+            if (soma < 10) {
+                soma++;
+                document.getElementById("soma").textContent = soma;
+            }
+             else {
+               alert ("finished")
+            }
+        }
+    </script>
+   
+
+      
+</body>
+</html>
